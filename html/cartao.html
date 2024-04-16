@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar com o Cartão</title>
+    <link href="../css/cartao.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form-checkout" class="formulario-checkout formulario-checkout-col-md-1">
+        <input id="form-checkout_cardNumber" class="input-large input-large-col-md-1" placeholder="Nº do Cartão" />
+        <div class="card-informations card-informations-col-md-1">
+            <input id="form-checkout_expirationDate" class="input-small input-small-col-md-1" placeholder="Data de Expiração" />
+            <input id="form-checkout__securityCode" class="input-small input-small-col-md-1" placeholder="Cód Segurança" />
+        </div>
+        <input type="text" id="form-checkout__cardholderName" class="input-large input-large-col-md-1" placeholder="Nome no Cartão" />
+        <select id="form-payment-method-id" class="input-large input-large-col-md-1">
+            <option selected="selected">Bandeira do Cartão</option>
+            <option>Visa</option>
+            <option>MasterCard</option>
+            <option>American Express</option>
+            <option>Elo</option>
+        </select>
+        <select id="form-checkout__identificationType" class="input-large input-large-col-md-1">
+            <option>CPF</option>
+            <option>CNPJ</option>
+        </select>
+        <input type="text" id="form-checkout__identificationNumber" class="input-large input-large-col-md-1" placeholder="Nº de Documento" />
+        <input type="email" id="form-checkout__cardholderEmail" class="input-large input-large-col-md-1" placeholder="E-Mail" />
+        <label class="value">Total: R$ 1,00</label>
+        <button type="submit" id="form-checkout__submit" class="botao botao-col-md-1">Pagar</button>
+        <progress value="0" class="progress-bar">Carregando...</progress>
+      </form>
+</body>
+</html>

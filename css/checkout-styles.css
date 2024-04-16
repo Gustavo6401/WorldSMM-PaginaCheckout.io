@@ -1,0 +1,83 @@
+:root {
+    --azul-muito-escuro: #021330;
+    --azul-muito-claro: #93CEFF;
+    --azul-escuro: #243C60;
+    --azul: #41709B;
+}
+
+body {
+    margin: 0;
+    background-color: var(--azul-escuro);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.corpo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.titulo {
+    margin-left: 30px;
+}
+
+.payment-component {
+    width: 70vw;
+    height: 25vh;
+    margin-left: 20px;
+    background-color: var(--azul);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+}
+
+.total {
+    background-color: var(--azul);
+    width: 23vw;
+    height: 100vh;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--azul-muito-escuro);
+}
+
+nav div {
+    float: right;
+}
+
+nav div i {
+    display: block;
+    color: var(--azul-muito-claro);
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .corpo-1-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payment-component-col-1 {
+        margin-left: 0;
+        width: 95vw;
+        margin-bottom: 5px;
+    }
+
+    .total-col-1 {
+        width: 95vw;
+        height: auto;
+    }
+}

@@ -1,0 +1,48 @@
+:root {
+    --azul-muito-escuro: #021330;
+    --azul-muito-claro: #93CEFF;
+    --azul-escuro: #243C60;
+    --azul: #41709B;
+}
+
+body {
+    margin: 0;
+    background-color: var(--azul-escuro);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-pdf {
+    margin-top: 10px;
+    background-color: var(--azul);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    height: 90vh;
+    border-radius: 10px;
+}
+
+.pdf-container {
+    width: 70vw;
+    height: 15vh;
+    background-color: var(--azul-escuro);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.image {
+    height: 80px;
+    width: 80px;
+}
+
+h2, h3 {
+    font-weight: 300;
+}

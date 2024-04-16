@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="../css/checkout-styles.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <article class="corpo corpo-1-col">
+        <div>
+            <h1 class="titulo">Métodos de Pagamento</h1>
+            <section class="payment-component payment-component-col-1" id="pix">
+                <div>
+                    <h1>Pix</h1>
+                    <label>Pague com Pix</label>
+                </div>
+                <div>
+                    <img src="../img/logo-pix-icone-1024.webp" />
+                </div>
+            </section>
+            <section class="payment-component payment-component-col-1">
+                <div>
+                    <h1>Cartão de Crédito</h1>
+                    <label>Pague com Cartão de Crédito</label>
+                </div>
+                <div>
+                    <i class="fa-regular fa-credit-card fa-10x" id="cartao-credito"></i>
+                </div>
+            </section>
+            <section class="payment-component payment-component-col-1">
+                <div>
+                    <h1>Boleto</h1>
+                    <label>Pague com o Boleto</label>
+                </div>
+                <div>
+                    <i class="fa-solid fa-barcode fa-10x" id="boleto"></i>
+                </div>
+            </section>
+        </div>
+        <div class="total total-col-1">
+            <h1>Total</h1>
+            <h1>R$ 10,00</h1>
+        </div>
+    </article>
+    <script src="https://kit.fontawesome.com/5a7d75a630.js" crossorigin="anonymous" fetchpriority="high"></script>
+    <script src="../js/hyperlink-pix.js"></script>
+</body>
+</html>
